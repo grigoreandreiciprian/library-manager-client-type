@@ -1,0 +1,34 @@
+.table{
+    text-align: center;
+
+    width: 80%;
+    margin: auto;
+
+
+    table{
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+
+    thead th{
+        border: 2px solid black;
+        font-size: 30px;
+        font-weight: bolder;
+    }
+
+
+    tbody td{
+        border: 2px solid black;
+        font-size: 25px;
+    }
+
+    tbody tr:nth-child(even){
+        background-color: green;
+        color: white;
+    }
+
+   
+
+
+}

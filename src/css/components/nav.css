@@ -1,0 +1,27 @@
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  margin: auto;
+  color: white;
+}
+nav .links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+nav .links a {
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  transition: 0.3s all;
+  margin-right: 20px;
+}
+nav .links a:hover {
+  transform: scale(1.1);
+  color: red;
+}
+
+/*# sourceMappingURL=nav.css.map */

@@ -1,0 +1,24 @@
+.table {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+.table table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.table thead th {
+  border: 2px solid black;
+  font-size: 30px;
+  font-weight: bolder;
+}
+.table tbody td {
+  border: 2px solid black;
+  font-size: 25px;
+}
+.table tbody tr:nth-child(even) {
+  background-color: green;
+  color: white;
+}
+
+/*# sourceMappingURL=table.css.map */

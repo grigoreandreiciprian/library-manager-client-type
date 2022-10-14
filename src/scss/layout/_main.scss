@@ -1,0 +1,23 @@
+
+main{
+    .buttons{
+      
+        width: 80%;
+        margin: 20px auto;
+
+    }
+
+    .btn{
+        padding: 5px 10px;
+        font-size: 25px;
+        background-color: green;
+        color: white;
+        transition: .3s all;
+    }
+
+    .btn:hover{
+       
+        background-color: red;
+    }
+ 
+}

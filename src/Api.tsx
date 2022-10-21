@@ -41,4 +41,12 @@ export default class Data {
 
       return response
     }
+
+
+    deleteBook = async(book:Book) =>{
+     const response = await this.api<Book[],Book>(`/books/${book.id}`, 'DELETE', book , "")
+     
+     return response
+    }
+     
 }

@@ -20,14 +20,10 @@ export const UpdateMain: React.FC  = () => {
   const Api= new Data()
   const navigate= useNavigate()
 
-  // console.log(id)
-
   const getBook = async () =>{
       
     const  response = await Api.getBooks();
 
-
-    //  console.log(response)
     let books=response.data != undefined ?response.data:response;
 
      
@@ -40,13 +36,7 @@ export const UpdateMain: React.FC  = () => {
              setBook(books[i]);
 
            }
-
-    }
-
-       console.log(book)
-
-    // console.log(books)
-   
+    }   
  
   }}
 
@@ -79,7 +69,6 @@ const handleChanger = (title:string,author:string,gendre:string,year:number) =>{
   return (
     <main>
       <UpdateBody  handleChanger={handleChanger} updateBook={updateBook} book={book} />
-      <button onClick={getBook}>Test</button>
     </main>
   )
 }

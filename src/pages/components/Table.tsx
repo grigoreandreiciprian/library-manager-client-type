@@ -8,17 +8,22 @@ import { useNavigate } from 'react-router-dom'
 
 
 
+
 const Table: React.FC =  () =>  {
 
     const [books,setBooks] = useState(Object)
 
     const navigate = useNavigate()
 
+    const [book,setBook] = useState(Object)
+
+   
+
     const Api= new Data()
 
     useEffect(()=>{
         getBooks()
-       },[])
+       })
 
    const getBooks = async () =>{
 
@@ -26,6 +31,10 @@ const Table: React.FC =  () =>  {
 
      setBooks(books)
    }
+
+   
+
+
 
    
 

@@ -14,13 +14,13 @@ interface Funtions {
 
 const AddForm: React.FC <Funtions> = ({ handleChanger,addBook}:Funtions) => {
 
-  const [title,setTitle] = useState("");
+  const [title,setTitle] = useState(String);
     
-    const [author,setAuthor] = useState("")
+    const [author,setAuthor] = useState(String)
 
-    const [gendre,setGendre] = useState("")
+    const [gendre,setGendre] = useState(String)
 
-    const [year,setYear]= useState(0)
+    const [year,setYear]= useState(Number)
 
 
  

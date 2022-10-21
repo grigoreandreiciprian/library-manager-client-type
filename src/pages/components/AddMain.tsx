@@ -7,11 +7,11 @@ import { useNavigate } from 'react-router-dom'
 
 const AddMain = () => {
 
-    const [title, setTitle] = useState("")
-    const [author,setAuthor] = useState("")
-    const [gendre,setGendre]= useState("")
-    const[year, setYear] = useState(0)
-    const [id,setId] = useState(0)
+    const [title, setTitle] = useState(String)
+    const [author,setAuthor] = useState(String)
+    const [gendre,setGendre]= useState(String)
+    const[year, setYear] = useState(Number)
+    const [id,setId] = useState(Number)
     const Api= new Data()
     const navigate= useNavigate()
 
